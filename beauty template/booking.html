@@ -1,0 +1,176 @@
+<!DOCTYPE HTML>
+<html>
+{% load static %}
+<head>
+<title>Beauty Salon Appointment Form a Responsive Widget Template :: w3layouts</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Beauty Salon Appointment Form template Responsive, Login form web template,Flat Pricing tables,Flat Drop downs Sign up Web Templates,
+ Flat Web Templates, Login sign up Responsive web template, SmartPhone Compatible web template, free web designs for Nokia, Samsung, LG, SonyEricsson, Motorola web design">
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<!-- Custom Theme files -->
+<link href="{% static 'appointment/css/wickedpicker.css' %}" rel="stylesheet" type='text/css' media="all" />
+<link href="{% static 'appointment/css/style.css' %}" rel='stylesheet' type='text/css' />
+<!--fonts-->
+<link href="//fonts.googleapis.com/css?family=Signika:300,400,600,700&amp;subset=latin-ext" rel="stylesheet">
+<!--//fonts-->
+</head>
+<body>
+<!--background-->
+<br>
+<style>
+	.previous {
+  color: white;
+}
+</style>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="userhome" class="previous">&laquo; Back</a>
+<h1>Beautify Appointment Form </h1>
+    <div class="bg-agile">
+	<div class="book-appointment">
+	<h2>Make an appointment</h2>
+			<form action="../booked" method="post">
+				{% csrf_token %}
+					<div class="gaps">
+						<div class="text-center"><input type="text" name="name" value="{{d1.NAME}}"placeholder="NAME" required=""><br><br></div>
+
+							<div class="text-center"><input type="text" name="username" placeholder="USERNAME" value="{{d1.USERNAME}}" required="" ><br><br></div>
+
+
+	<div class="text-center"><input type="text" name="useraddress" placeholder="USERADDRESS" required="" ><br><br></div>
+
+	<div class="text-center"><input type="text" name="email" placeholder="EMAIL" required="" value="{{d1.EMAIL}}"><br><br></div>
+	<div class="text-center"><input type="text" name="phonenumber" placeholder="PHONENUMBER" value="{{d1.PHONENUMBER}}" required=""><br><br></div>
+
+	<div class="text-center"><input type="text" name="artistname" placeholder="ARTISTNAME" required="" value="{{d2.name}}"><br><br></div>
+
+	<div class="text-center"><input type="text" name="artistemail" placeholder="ARTISTEMAIL" value="{{d2.email}}" required=""><br><br></div>
+
+
+
+<!--	<div class="text-center"><input type="text" name="addservices" placeholder="ADDSERVICE" required=""><br><br></div>-->
+
+	<div class="text-center"><input type="date" name="appointmentdate" placeholder="APPOINTMENTDATE" required=""><br><br></div>
+
+	<div class="text-center"><input type="time" name="appointmenttime" placeholder="APPOINTMENTTIME" required=""><br><br></div>
+	<div class="gaps">
+						<p>Services</p>
+						<select class="form-control" name="a1">
+<!--							<option></option>-->
+							<option value="{{d3.addservice}}">{{d3.addservice}}</option>
+<!--														<option value="{{d3.amount}}">{{d3.amount}}</option>-->
+
+						</select>
+						</div>
+
+<!--						<p>Your Name</p>-->
+<!--						<input type="text" name="a1" placeholder="" required=""/>-->
+<!--					</div>-->
+<!--					<div class="gaps">-->
+<!--						<p>Email Id</p>-->
+<!--						<input type="email" name="b1" placeholder="" required=""   pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$">-->
+<!--					</div>-->
+<!--					<div class="gaps">-->
+<!--						<p>Contact Number</p>-->
+<!--						<input type="text" name="c1" placeholder="" required="" pattern="[0-9]{10}"/>-->
+<!--					</div>-->
+<!--					<div class="gaps">-->
+<!--						<p>Book Your Date</p>-->
+<!--						<input name="d1" id="dateInput" type="date" value="" required="" min="" max="01-12-2030">-->
+<!--					</div>-->
+<!--					<div class="gaps">-->
+<!--						<p>Book Your Time</p>-->
+<!--						<input type="time" id="timepicker" name="e1"  value="">-->
+<!--					</div>-->
+
+<!--				{% for i in r %}-->
+<!--					<div class="left-agileits-w3layouts same">-->
+<!--						<div class="">-->
+<!--	&lt;!&ndash;						<p>Username</p>&ndash;&gt;-->
+<!--							<input type="text" name="g1" value="{{r1}}" placeholder="" required="" hidden="">-->
+<!--						</div>-->
+<!--						<div class="">-->
+<!--	&lt;!&ndash;						<p>BeautyParlour name</p>&ndash;&gt;-->
+<!--							<input type="text" name="name" value="{{i.name}}" placeholder="" required="" hidden="">-->
+						</div>
+			</form>			</div>
+					<div class="right-agileinfo same">
+				{% endfor %}
+
+
+
+
+<!--			</div>-->
+<!--					<div class="gaps">-->
+<!--						<p>Your Name</p>-->
+<!--						<input type="text" name="a1" placeholder="" required=""/>-->
+<!--					</div>-->
+<!--					<div class="gaps">-->
+<!--						<p>Email Id</p>-->
+<!--						<input type="email" name="b1" placeholder="" required=""   pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$">-->
+<!--					</div>-->
+<!--					<div class="gaps">-->
+<!--						<p>Contact Number</p>-->
+<!--						<input type="text" name="c1" placeholder="" required="" pattern="[0-9]{10}"/>-->
+<!--					</div>-->
+<!--					<div class="gaps">-->
+<!--						<p>Book Your Date</p>-->
+<!--						<input  id="datepicker1" name="d1" type="date" value="" required="">-->
+<!--					</div>-->
+<!--					<div class="gaps">-->
+<!--						<p>Book Your Time</p>-->
+<!--						<input type="time" id="timepicker" name="e1"  value="">-->
+<!--					</div>-->
+<!--					<div class="gaps">-->
+<!--						<p>Services</p>-->
+<!--						<select class="form-control" name="f1">-->
+<!--							{% for i in r %}-->
+<!--							<option></option>-->
+<!--							<option value="{{i.service}}">{{i.service}}</option>-->
+<!--							 {% endfor %}-->
+<!--						</select>-->
+<!--					</div>-->
+			<div class="clear"></div>
+				<input type="submit" value="Make an appointment" class="btn btn-defeault btn-send"  onclick="return confirm('Are you sure ??')">
+					</div>
+			</form>
+		</div>
+<!--		<script>-->
+<!--				   function app() {-->
+<!--				   alert("Appointment Booked");-->
+<!--				   }-->
+<!--		</script>-->
+		<script>
+
+			var today = new Date();
+
+
+			var formattedDate = today.toISOString().substr(0, 10);
+
+
+			document.getElementById("dateInput").min = formattedDate;
+		</script>
+   </div>
+   <!--copyright-->
+<!--			<div class="copy w3ls">-->
+<!--		       <p>&copy; 2017 Beauty Salon Appointment Form. All Rights Reserved  | Design by <a href="http://w3layouts.com/" target="_blank">W3layouts</a> </p>-->
+<!--	        </div>-->
+		<!--//copyright-->
+		<script type="text/javascript" src="{% static 'appointment/js/jquery-2.1.4.min.js' %}"></script>
+		<script type="text/javascript" src="{% static 'appointment/js/wickedpicker.js' %}"></script>
+			<script type="text/javascript">
+				$('.timepicker').wickedpicker({twentyFour: false});
+			</script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+

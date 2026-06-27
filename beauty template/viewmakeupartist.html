@@ -1,0 +1,270 @@
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <title>Title</title>-->
+<!--    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">-->
+<!--  <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>-->
+<!--  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>-->
+<!--  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>-->
+<!--</head>-->
+<!--<body style="background-color:rgba(173, 122, 122, 0.8)">-->
+<!--&lt;!&ndash;    <nav class="navbar navbar-expand-sm bg-light justify-content-center" style="height:100px;width:1500px;background-color: #C4A484">&ndash;&gt;-->
+<!--&lt;!&ndash;        <ul class="navbar-nav">&ndash;&gt;-->
+<!--&lt;!&ndash;            <li class="nav-item">&ndash;&gt;-->
+<!--&lt;!&ndash;                <a class="nav-link" href="pro">HOME</a>&ndash;&gt;-->
+<!--&lt;!&ndash;            </li>&ndash;&gt;-->
+<!--&lt;!&ndash;            <li class="nav-item">&ndash;&gt;-->
+<!--&lt;!&ndash;                <a class="nav-link" href="lo">LOGOUT</a>&ndash;&gt;-->
+<!--&lt;!&ndash;            </li>&ndash;&gt;-->
+
+<!--&lt;!&ndash;        </ul>&ndash;&gt;-->
+<!--&lt;!&ndash;    </nav>&ndash;&gt;-->
+<!--<br>-->
+<!--<style>-->
+<!--	.previous {-->
+<!--  color: black;-->
+<!--}-->
+<!--</style>-->
+<!--<a href="userhome" class="previous">&laquo; Back</a>-->
+<!--    <br><br><br><br>-->
+
+
+<!--    {% for i in r %}-->
+<!--        <div class="container">-->
+<!--            <div class="text-center"></div>-->
+<!--            <div class="card-group" style="height:400px;width:400px;float:left;border: 2px solid black"; >-->
+<!--                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img class="card-img-top" src="{{i.photo.url}}" alt="Card image" style="width:250px">-->
+<!--                <div class="card-body">-->
+<!--                  <h4 class="card-title">{{i.name}}</h4>-->
+<!--                    <h6 class="card-title">{{i.time}}</h6>-->
+<!--                  <p class="card-text"></p>-->
+<!--                  <a href="viewmakeupartist/{{i.username}}" class="btn btn-primary" style="background-color:brown">Profile</a>-->
+<!--&lt;!&ndash;                    <a href="wait" class="btn btn-primary">Profile</a>&ndash;&gt;-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    {% endfor %}-->
+<!--    <style>-->
+<!--    nav {-->
+<!--    background-color: #007bff;-->
+<!--}-->
+<!--</style>-->
+<!--&lt;!&ndash;<table border="2" align="center" class="table table-bordered">&ndash;&gt;-->
+<!--&lt;!&ndash;    <thead class="thead-light">&ndash;&gt;-->
+<!--&lt;!&ndash;    <tr>&ndash;&gt;-->
+<!--&lt;!&ndash;        <th>Name</th>&ndash;&gt;-->
+<!--&lt;!&ndash;        <th>Owner name</th>&ndash;&gt;-->
+<!--&lt;!&ndash;        <th>Address</th>&ndash;&gt;-->
+<!--&lt;!&ndash;        <th>Phone number</th>&ndash;&gt;-->
+<!--&lt;!&ndash;        <th>Photo</th>&ndash;&gt;-->
+<!--&lt;!&ndash;        <th>Email</th>&ndash;&gt;-->
+<!--&lt;!&ndash;        <th>License</th>&ndash;&gt;-->
+<!--&lt;!&ndash;        <th>Location</th>&ndash;&gt;-->
+<!--&lt;!&ndash;        <th></th>&ndash;&gt;-->
+<!--&lt;!&ndash;    </tr>&ndash;&gt;-->
+<!--&lt;!&ndash;    <tr>&ndash;&gt;-->
+<!--&lt;!&ndash;        {% for i in r %}&ndash;&gt;-->
+<!--&lt;!&ndash;            <td>{{i.name}}</td>&ndash;&gt;-->
+<!--&lt;!&ndash;            <td>{{i.owner_name}}</td>&ndash;&gt;-->
+<!--&lt;!&ndash;            <td>{{i.address}}</td>&ndash;&gt;-->
+<!--&lt;!&ndash;            <td>{{i.phone_num}}</td>&ndash;&gt;-->
+<!--&lt;!&ndash;            <td><img src="{{i.photo.url}}" height="100px" width="100px"></td>&ndash;&gt;-->
+<!--&lt;!&ndash;            <td>{{i.email}}</td>&ndash;&gt;-->
+<!--&lt;!&ndash;            <td><img src="{{i.license.url}}" height="100px" width="100px"></td>&ndash;&gt;-->
+<!--&lt;!&ndash;            <td>{{i.location}}</td>&ndash;&gt;-->
+<!--&lt;!&ndash;            <td><a href="vbp">Details</a> </td>&ndash;&gt;-->
+<!--&lt;!&ndash;    </tr>&ndash;&gt;-->
+<!--&lt;!&ndash;        {% endfor %}&ndash;&gt;-->
+<!--&lt;!&ndash;    </thead>&ndash;&gt;-->
+<!--&lt;!&ndash;</table>&ndash;&gt;-->
+
+<!--</body>-->
+<!--</html>-->
+
+
+
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+	<title>Beauty Salon a Beauty Category Bootstrap Responsive website Template | Home :: w3layouts</title>
+	<!-- Meta Tags -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="keywords" content="Beauty Salon Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template,
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony Ericsson, Motorola web design" />
+	<script type="application/x-javascript">
+		addEventListener("load", function () {
+			setTimeout(hideURLbar, 0);
+		}, false);
+
+		function hideURLbar() {
+			window.scrollTo(0, 1);
+		}
+	</script>
+	<!-- //Meta Tags -->
+	<!-- Style Sheets -->
+	<link href="{% static 'css/bootstrap.css' %}" rel="stylesheet" type="text/css" media="all" />
+	<!--// Bootstrap-CSS -->
+	<link href="{% static 'css/font-awesome.css' %}" rel="stylesheet">
+	<!--// Font-Awesome-CSS -->
+	<link rel="stylesheet" href="css/owl.carousel.css" type="text/css" media="all" />
+	<link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" property="" />
+	<!--// Owl-Carousel-CSS -->
+	<link href="{% static 'css/style.css' %}" rel="stylesheet" type="text/css" media="all" />
+	<!-- //Style Sheets -->
+	<!-- web-fonts -->
+	<link href="//fonts.googleapis.com/css?family=Khula:300,400,600,700,800}" rel="stylesheet">
+	<link href="//fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,400,400i,500,500i,600,600i,700,700i,800'" rel="stylesheet">
+	<!--// web-fonts -->
+</head>
+
+<body>
+	<!-- banner -->
+	<div class="banner jarallax" id="home">
+		<img class="jarallax-img" src="{% static 'images/MAKEOVER.jpg' %}" alt="">
+		<header>
+			<div class="container">
+				<div class="header-bottom-agileits">
+					<div class="w3-logo">
+												<h1><span style="color:black">BEAU</span><span style="color:white">TIFY</span></a></h1>
+
+<!--						<h1>BEAUTIFY</a></h1>-->
+
+					</div>
+					<div class="clearfix"></div>
+				</div>
+			</div>
+		</header>
+		<!-- navigation -->
+		<div class="nav-bg">
+			<div class="container">
+<!--					<nav class="navbar navbar-default shift">-->
+					<!-- Brand and toggle get grouped for better mobile display -->
+					<div class="navbar-header">
+<!--						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"-->
+<!--							aria-expanded="false">-->
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+
+					</div>
+
+					</head>
+				</head>
+<body>
+<!--background-->
+<br>
+<style>
+	.previous {
+  color: white;
+}
+</style>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="userhome" class="previous">&laquo; Back</a>
+<!--<a href="userhome" class="previous">&laquo; Back</a>-->
+    <br><br><br><br>
+
+
+    {% for i in r %}
+        <div class="container">
+            <div class="text-center"></div>
+            <div class="card-group" style="height:400px;width:400px;float:left;border: 6px solid white"; >
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img class="card-img-bottom" src="{{i.photo.url}}" alt="Card image" style="width:250px">
+                <div class="card-body">
+                 <div class="text-center"><h2 style="color:white">{{i.name}}</h2>
+                    <h5 style="color:white" class="card-title">{{i.time}}</h5>
+                 <p class="card-text"></p>
+                  <a href="viewmakeupartist/{{i.username}}" class="btn btn-primary" style="background-color:brown">Profile</a>
+<!--                    <a href="wait" class="btn btn-primary">Profile</a>-->
+                </div>
+            </div>
+        </div>
+    {% endfor %}
+<!--    <style>-->
+<!--    nav {-->
+<!--    background-color: #007bff;-->
+<!--}-->
+<!--&lt;!&ndash;<h1>Beautify Appointment Form </h1>&ndash;&gt;-->
+<!--&lt;!&ndash;    <div class="bg-agile">&ndash;&gt;-->
+<!--&lt;!&ndash;	<div class="book-appointment">&ndash;&gt;-->
+<!--&lt;!&ndash;		<div class="header-bottom">&ndash;&gt;-->
+<!--&lt;!&ndash;			<div class="container">&ndash;&gt;-->
+<!--&lt;!&ndash;				<div class="col-md-3 logo-w3l">&ndash;&gt;-->
+<!--&lt;!&ndash;&lt;!&ndash;					<h1><a class="navbar-brand" href="index.html"><span>B</span>eauty Life</a></h1>&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;				</div>&ndash;&gt;-->
+<!--&lt;!&ndash;				<div class="col-md-9 navi-w3l">&ndash;&gt;-->
+<!--&lt;!&ndash;						<nav class="navbar navbar-default">&ndash;&gt;-->
+<!--&lt;!&ndash;							<div class="container-fluid">&ndash;&gt;-->
+<!--&lt;!&ndash;								<div class= "header-main" id="home">&ndash;&gt;-->
+<!--&lt;!&ndash;<div class="header-outs">&ndash;&gt;-->
+<!--&lt;!&ndash;		<div class="header-bar">&ndash;&gt;-->
+
+<!--&lt;!&ndash;				<h1><a href="index.html">Beauty Glam</a></h1>&ndash;&gt;-->
+<!--			</div>-->
+
+
+<!--			&lt;!&ndash; Collect the nav links, forms, and other content for toggling &ndash;&gt;-->
+<!--&lt;!&ndash;<div class="menu">&ndash;&gt;-->
+
+
+<!--&lt;!&ndash;						<a href="viewmakeupartist/{{i.name}}" id="menuToggle"> <span class="navClosed"></span> </a>&ndash;&gt;-->
+<!--&lt;!&ndash;						<nav>&ndash;&gt;-->
+<!--&lt;!&ndash;							<a href="../userhome" >Home</a>&ndash;&gt;-->
+<!--&lt;!&ndash;							<a href="../dbp" class="active">Profile</a>&ndash;&gt;-->
+<!--&lt;!&ndash;							<a href="../vserv" class="">Services</a>&ndash;&gt;-->
+<!--&lt;!&ndash;							<a href="../booking">Appointment</a>&ndash;&gt;-->
+<!--&lt;!&ndash;&lt;!&ndash;							<a href="../revbyusr">Reviews</a>&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;&lt;!&ndash;							<a href="../vrevusr">View Reviews</a>&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;							<a href="/galleryu">Gallery</a>&ndash;&gt;-->
+<!--&lt;!&ndash;							<a href="/logout" class="">Logout</a>&ndash;&gt;-->
+<!--&lt;!&ndash;&lt;!&ndash;							<a href="#news" class="scroll">News</a>&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;&lt;!&ndash;							<a href="#price" class="scroll">price</a> &ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;&lt;!&ndash;							<a href="#contact" class="scroll">Contact</a> &ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;						</nav>&ndash;&gt;-->
+
+
+<!--</div>-->
+<!-- <div class="clearfix"> </div>-->
+<!--</div>-->
+
+<!--&lt;!&ndash; Slideshow 4 &ndash;&gt;-->
+<!--		<div class="slider">-->
+<!--			<div class="callbacks_container">-->
+
+<!--				<ul class="rslides callbacks callbacks1" id="slider4">-->
+
+<!--				</ul>		</div>-->
+<!--			<div class="clearfix"> </div>-->
+<!--		</div>-->
+
+<!--&lt;!&ndash;				</div>&ndash;&gt;-->
+<!--				<div class="clearfix"></div>-->
+<!--			</div>-->
+<!--						</nav>	</div>-->
+<!--	</div>-->
+<!--&lt;!&ndash;			<div class="w3layouts-banner-top w3layouts-banner-top1">&ndash;&gt;-->
+<!--&lt;!&ndash;							<div class="container">&ndash;&gt;-->
+<!--&lt;!&ndash;								<div class="slider-info">&ndash;&gt;-->
+
+<!--&lt;!&ndash;									<section id="home" class="welcome-hero">&ndash;&gt;-->
+<!--&lt;!&ndash;			<div class="container">&ndash;&gt;-->
+<!--&lt;!&ndash;&lt;!&ndash;				<div class="welcome-hero-txt">&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;					<body>                    						<div class="text-center bottom" style="color:black" ><b><h1><a class="hvr-overline-from-center button2" >ONLY FOR YOU</h1>&ndash;&gt;-->
+<!--&lt;!&ndash;						<h1>KEEP YOUR PERFECT LOOK</h1><br><br></b></div></a>&ndash;&gt;-->
+<!--&lt;!&ndash;                    							</body>&ndash;&gt;-->
+
+<!--&lt;!&ndash;				</div>&ndash;&gt;-->
+
+
+<!--	&lt;!&ndash; //header &ndash;&gt;-->
+<!--	&lt;!&ndash; banner &ndash;&gt;-->
+<!--		&lt;!&ndash; Slider &ndash;&gt;-->
+<!--					<li>-->
+
+					</li></div></div></div></body>
+
+				</d</div></div></div></div></html>

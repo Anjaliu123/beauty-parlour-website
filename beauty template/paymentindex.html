@@ -1,0 +1,238 @@
+
+
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+	<title>Beauty Salon a Beauty Category Bootstrap Responsive website Template | Home :: w3layouts</title>
+	<!-- Meta Tags -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="keywords" content="Beauty Salon Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template,
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony Ericsson, Motorola web design" />
+	<script type="application/x-javascript">
+		addEventListener("load", function () {
+			setTimeout(hideURLbar, 0);
+		}, false);
+
+		function hideURLbar() {
+			window.scrollTo(0, 1);
+		}
+	</script>
+	<!-- //Meta Tags -->
+	<!-- Style Sheets -->
+	<link href="{% static 'css/bootstrap.css' %}" rel="stylesheet" type="text/css" media="all" />
+	<!--// Bootstrap-CSS -->
+	<link href="{% static 'css/font-awesome.css' %}" rel="stylesheet">
+	<!--// Font-Awesome-CSS -->
+	<link rel="stylesheet" href="css/owl.carousel.css" type="text/css" media="all" />
+	<link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" property="" />
+	<!--// Owl-Carousel-CSS -->
+	<link href="{% static 'css/style.css' %}" rel="stylesheet" type="text/css" media="all" />
+	<!-- //Style Sheets -->
+	<!-- web-fonts -->
+	<link href="//fonts.googleapis.com/css?family=Khula:300,400,600,700,800}" rel="stylesheet">
+	<link href="//fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,400,400i,500,500i,600,600i,700,700i,800'" rel="stylesheet">
+	<!--// web-fonts -->
+</head>
+
+<body>
+	<!-- banner -->
+	<div class="banner jarallax" id="home">
+		<img class="jarallax-img" src="{% static 'images/pic1.jpg' %}" alt="">
+		<header>
+			<div class="container">
+				<div class="header-bottom-agileits">
+<!--					<div class="w3-logo">-->
+<!--						<h1><a href="artisthome">BEAUTIFY</a></h1>-->
+
+<!--					</div>-->
+					<div class="clearfix"></div>
+				</div>
+			</div>
+		</header>
+		<!-- navigation -->
+		<div class="nav-bg">
+			<div class="container">
+<!--					<nav class="navbar navbar-default shift">-->
+					<!-- Brand and toggle get grouped for better mobile display -->
+					<div class="navbar-header">
+<!--						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"-->
+<!--							aria-expanded="false">-->
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+
+					</div>
+
+					</head>
+				</head>
+<body>
+<!--background-->
+<br>
+<style>
+	.previous {
+  color: white;
+}
+</style>
+</style>
+<br><br><br>
+<h1>		<div class="text-center">
+
+		<span>P</span>AYMENT
+
+	</h1>
+	<!-- //title -->
+	<!-- content -->
+	<div class="sub-main-w3">
+				<div class="text-center">
+
+		<form action="pay/{{r1}}" method="post" class="creditly-card-form agileinfo_form">
+			{% csrf_token %}
+			{% for i in r %}
+			<div class="form-style-agile">
+				<label>
+					Name
+				</label>
+				<input placeholder="Name"  value="{{i.name}}" name="b2" class="name" type="text" required=""><br><br>
+			</div>
+			<div class="form-style-agile">
+				<label>
+					Makeupartist name
+				</label>
+				<input placeholder = "Name"  value="{{i.artistname}}" name="b1" class="name" type="text" required="" ><br><br>
+			</div>
+			<div class="form-style-agile">
+				<label>
+					Email
+				</label>
+				<input placeholder = "Email"  value="{{i.email}}" name="b3" class="name" type="text" required="" ><br><br>
+			</div>
+			<div class="form-style-agile">
+				<label>
+					Service
+				</label>
+				<input placeholder = "Service"  value="{{r2}}" name="b4" class="name" type="text" required="" ><br><br>
+			</div>
+			<div class="form-style-agile">
+				<label>
+					Amount
+				</label>
+				<input placeholder = "Amount"  value="{{r1}}" name="b5" class="name" type="text" required="" ><br><br>
+			</div>
+			<div class="form-style-agile">
+				<label>
+					Service Charge
+				</label>
+				<input placeholder = "Amount"  value="{{10}}" name="b6" class="name" type="text" required="" ><br><br>
+				</div>
+			<input type="submit" name="submit" value="Pay Now"><br><br>
+			{% endfor %}
+		</form>
+	</div>
+<!--<div class="agile">-->
+<!--			<div class="signin-form profile">-->
+
+<!--				<div class="w3layouts-main">-->
+<!--				<h1><span>Update</span></h1>-->
+<!--				<form action="usrup" method="POST" >-->
+<!--					{% csrf_token %}-->
+<!--					{% for i in r %}-->
+
+<!--					<input placeholder="Name"  value="{{i.NAME}}" name='name' class="name" type="text">-->
+
+<!--					<input placeholder="AGE" value="{{i.AGE}}"  name='age' class="name" type="text" >-->
+
+<!--					<input placeholder="Phone Number" value="{{i.PHONENUMBER}}" name='phonenumber' class="number" type="text" pattern="[0-9]{10}">-->
+
+<!--					<input placeholder="Email" value="{{i.EMAIL}}" name='email' class="name" type="text"   pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$">-->
+
+<!--					<input placeholder="UserName" value="{{i.USERNAME}}"  name='n' class="name" type="text" hidden="">-->
+
+
+
+<!--					{% endfor %}-->
+
+<!--					<input type="submit" value="UPDATE" class="btn btn-defeault btn-send"  onclick="return confirm('Are you sure ??')" >-->
+
+<!--				</form>-->
+<!--				</div>-->
+<!--&lt;!&ndash;				<script>&ndash;&gt;-->
+<!--&lt;!&ndash;				   function ureg() {&ndash;&gt;-->
+<!--&lt;!&ndash;				   alert("You have updated successfully");&ndash;&gt;-->
+<!--&lt;!&ndash;				   }&ndash;&gt;-->
+<!--&lt;!&ndash;         		</script>&ndash;&gt;-->
+<!--			</div>-->
+		<div class="clear"></div>
+		<!--//signin-form-->
+</body></div>
+<!--				<h1>U<span>PDATE</span></h1>-->
+
+<!--&nbsp;&nbsp;<a href="orders" class="previous">&laquo; Back</a>-->
+
+<!--&lt;!&ndash;	<h1>Flat Signup Form</h1>&ndash;&gt;-->
+<!--	&lt;!&ndash; main &ndash;&gt;-->
+<!--	<div class="main">-->
+<!--		&lt;!&ndash;login-profile&ndash;&gt;-->
+
+<!--		&lt;!&ndash;login-profile&ndash;&gt;-->
+<!--		&lt;!&ndash;signin-form&ndash;&gt;-->
+
+<!--		<div class="agile">-->
+<!--			<div class="signin-form profile">-->
+<!--				<form action="mupd" method="POST" enctype="multipart/form-data">-->
+<!--					{% csrf_token %}-->
+<!--					{% for i in r %}-->
+
+<!--					<input placeholder=" Name"  value="{{i.name}}" name='c1' class="name" type="text">-->
+
+<!--&lt;!&ndash;					<input placeholder="Owner name"  value="{{i.owner_name}}" name='c2' class="name" type="text">&ndash;&gt;-->
+
+<!--					<input placeholder="Address" value="{{i.address}}"  name='c3' class="name" type="text" >-->
+
+<!--					<input placeholder="Phone Number" value="{{i.phonenumber}}" name='c4' class="number" type="text" pattern="[0-9]{10}">-->
+
+<!--					<input placeholder="Email" value="{{i.email}}" name='c7' class="mail" type="text"   pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$">-->
+
+
+<!--					<input placeholder="Location" value="{{i.location}}"  name='c8' class="name" type="text" >-->
+
+<!--					<input placeholder="UserName" value="{{i.username}}"  name='n' class="name" type="text" hidden="">-->
+
+<!--					<br><br><label style="color:white">Photo</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-->
+<!--					<input placeholder="Photo"  value="{{i.photo}}" name="c5" type="file" required="">-->
+
+<!--					<br><br><label style="color:white">License</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-->
+<!--					<input placeholder="License" value="{{i.license}}" name="c6" type="file" required=""><br><br>-->
+
+<!--					{% endfor %}-->
+
+<!--				<input type="submit" value="Update" class="btn btn-primary">-->
+<!--				</form>-->
+<!--			</div>-->
+<!--&lt;!&ndash;				<script>&ndash;&gt;-->
+<!--&lt;!&ndash;				   function breg() {&ndash;&gt;-->
+<!--&lt;!&ndash;				   alert("You have updated successfully");&ndash;&gt;-->
+<!--&lt;!&ndash;				   }&ndash;&gt;-->
+<!--&lt;!&ndash;         		</script>&ndash;&gt;-->
+<!--		</div>-->
+<!--	</div>-->
+
+<!--				</nav>-->
+<!--			</div>-->
+<!--		</div>-->
+<!--		&lt;!&ndash; //navigation &ndash;&gt;-->
+<!--		<div class="container">-->
+<!--			&lt;!&ndash; header &ndash;&gt;-->
+<!--			&lt;!&ndash; //header &ndash;&gt;-->
+<!--			<div class="agileits_w3layouts_banner_info">-->
+<!--				<section class="slider">-->
+<!--					<div class="flexslider">-->
+
+		</div></div></body>
+
+
+</html>

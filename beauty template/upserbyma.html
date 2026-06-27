@@ -1,0 +1,172 @@
+
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+	<title>Beauty Salon a Beauty Category Bootstrap Responsive website Template | Home :: w3layouts</title>
+	<!-- Meta Tags -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="keywords" content="Beauty Salon Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template,
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony Ericsson, Motorola web design" />
+	<script type="application/x-javascript">
+		addEventListener("load", function () {
+			setTimeout(hideURLbar, 0);
+		}, false);
+
+		function hideURLbar() {
+			window.scrollTo(0, 1);
+		}
+	</script>
+	<!-- //Meta Tags -->
+	<!-- Style Sheets -->
+	<link href="{% static 'css/bootstrap.css' %}" rel="stylesheet" type="text/css" media="all" />
+	<!--// Bootstrap-CSS -->
+	<link href="{% static 'css/font-awesome.css' %}" rel="stylesheet">
+	<!--// Font-Awesome-CSS -->
+	<link rel="stylesheet" href="css/owl.carousel.css" type="text/css" media="all" />
+	<link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" property="" />
+	<!--// Owl-Carousel-CSS -->
+	<link href="{% static 'css/style.css' %}" rel="stylesheet" type="text/css" media="all" />
+	<!-- //Style Sheets -->
+	<!-- web-fonts -->
+	<link href="//fonts.googleapis.com/css?family=Khula:300,400,600,700,800}" rel="stylesheet">
+	<link href="//fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,400,400i,500,500i,600,600i,700,700i,800'" rel="stylesheet">
+	<!--// web-fonts -->
+</head>
+
+<body>
+	<!-- banner -->
+	<div class="banner jarallax" id="home">
+		<img class="jarallax-img" src="{% static 'images/p3.jpg' %}" alt="">
+		<header>
+			<div class="container">
+				<div class="header-bottom-agileits">
+<!--					<div class="w3-logo">-->
+<!--						<h1><a href="artisthome">BEAUTIFY</a></h1>-->
+
+<!--					</div>-->
+					<div class="clearfix"></div>
+				</div>
+			</div>
+		</header>
+		<!-- navigation -->
+		<div class="nav-bg">
+			<div class="container">
+<!--					<nav class="navbar navbar-default shift">-->
+					<!-- Brand and toggle get grouped for better mobile display -->
+					<div class="navbar-header">
+<!--&lt;!&ndash;						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"&ndash;&gt;-->
+<!--&lt;!&ndash;							aria-expanded="false">&ndash;&gt;-->
+<!--							<span class="sr-only">Toggle navigation</span>-->
+<!--							<span class="icon-bar"></span>-->
+<!--							<span class="icon-bar"></span>-->
+<!--							<span class="icon-bar"></span>-->
+						</button>
+
+					</div>
+
+					</head>
+				</head>
+			</div><body>
+<!--background-->
+<br>
+<style>
+	.previous {
+  color: white;
+}
+</style>
+</style>
+<br><br><br>
+<a href="orders" class="previous">&laquo; Back</a>
+<div class="navigation">
+				<span class="menu"><img src="images/menu.png" alt=""/></span>
+				<ul class="nav1">
+<!--					<li><a class="active" href="orders">Home</a></li>-->
+<!--					<li><a class="hvr-overline-from-center button2 " href="bp">Profile</a></li>-->
+<!--					<li><a class="hvr-overline-from-center button2" href="adser">Add Service</a></li>-->
+<!--					<li><a class="hvr-overline-from-center button2" href="vser">View Service</a></li>-->
+<!--					<li><a class="hvr-overline-from-center button2" href="vbbp">Bookings</a></li>-->
+<!--					<li><a class="hvr-overline-from-center button2" href="vconfbybp">View Booking</a></li><br>-->
+<!--					<li><a class="hvr-overline-from-center button2" href="gallbybp">Gallery</a></li>-->
+<!--					<li><a class="hvr-overline-from-center button2" href="vphbybp">View gallery</a></li>-->
+<!--					<li><a class="hvr-overline-from-center button2" href="bppay">Payment</a></li>-->
+<!--					<li><a class="hvr-overline-from-center button2" href="logout">Logout</a></li>-->
+<!--					<li><a class="hvr-overline-from-center button2" href="shortcodes.html">Short Codes</a></li>-->
+<!--					<li><a class="hvr-overline-from-center button2" href="contact.html">Contact</a></li>-->
+				</ul>
+
+				<!-- script for menu -->
+					<script>
+						$( "span.menu" ).click(function() {
+						$( "ul.nav1" ).slideToggle( 300, function() {
+						 // Animation complete.
+						});
+						});
+					</script>
+				<!-- //script for menu -->
+			</div>
+
+<!--			<div class="search">-->
+<!--				<form>-->
+<!--					<input type="search" value="Search" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Search';}" required="">-->
+<!--					<input type="submit" value=" ">-->
+<!--				</form>-->
+<!--			</div>-->
+			<div class="clearfix"></div>
+		</body>	</div>
+		<style>
+			/* CSS code */
+			.myDivision {
+				width:1450px; /* Set the width to 300 pixels */
+				height:auto;
+				background-color: rgb(0 0 0 / 80%); /* Optional: Add background color */
+				padding: 20px;/* Optional: Add padding */
+				opacity:0.7}
+
+		</style>
+		<br><br><br>
+<!--			<a href="orders" class="previous">&laquo; Back</a>-->
+<div class="wrap">
+<!-- tab style-1 -->
+<div class="row">
+	<div class="grid_12 columns">
+		<div class="tab style-1">
+
+    					<ul>
+    						<li class="active">
+			    				<div class="form">
+									<form action="updser" method="POST" >
+									{% csrf_token %}
+									{% for i in r %}
+
+								<div class="text-center">
+									<input placeholder="Service"  value="{{i.addservice}}" name='a1' class="name" type="text"><br><br>
+
+									<input placeholder="Description" value="{{i.description}}"  name='a2' class="name" type="text" ><br><br>
+
+									<input placeholder="Amount" value="{{i.amount}}" name='a3' class="number" type="text"><br><br>
+										<input placeholder="UserName" value="{{i.username}}"  name='n' class="name" type="text" hidden=""><br><br>
+
+																		{% endfor %}
+
+									<input type="submit" value="Update" class="btn btn-primary"  onclick="return confirm('Are you sure ??')" style="background-color:#e37be3ba">
+								</div></form>
+							    </div>
+							</li>
+
+
+		<div class="container">
+			<!-- header -->
+			<!-- //header -->
+			<div class="agileits_w3layouts_banner_info">
+				<section class="slider">
+					<div class="flexslider">
+
+					</div></section></div></div></ul></div></div></div></div></div>	</body>
+
+
+</html>
+
+

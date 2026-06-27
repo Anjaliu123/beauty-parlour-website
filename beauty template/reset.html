@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zxx">
+{% load static %}
+<head>
+    <title>Service login form Responsive Widget Template : W3Layouts</title>
+
+    <!-- Meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Google fonts -->
+    <link href="//fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <!-- CSS Stylesheet -->
+    <link rel="stylesheet" href="{% static 'forndreset/css/style.css' %}" type="text/css" media="all" />
+
+</head>
+
+<body>
+    <div class="signinform">
+        <h1>Reset Password</h1>
+        <!-- container -->
+        <div class="container">
+            <!-- main content -->
+            <div class="w3l-form-info">
+                <div class="w3_info">
+<!--                    <h2>Forget Password</h2>-->
+                    <form action="" method="post" >
+   					 {% csrf_token %}
+                        New password:
+                        <div class="input-group">
+                            <span><i class="fas fa-key" aria-hidden="true"></i></span>
+                            <input type="text" name="newpassword"><br>
+                        </div>
+                        Confirm password:
+                         <div class="input-group">
+                            <span><i class="fas fa-key" aria-hidden="true"></i></span>
+                            <input type="text" name="cpassword"><br>
+                        </div>
+                        <button class="btn btn-primary btn-block" type="submit">Submit</button>
+                    </form>
+
+                </div>
+            </div>
+            <!-- //main content -->
+        </div>
+
+    </div>
+
+    <!-- fontawesome v5-->
+    <script src="{% static 'forndreset/js/fontawesome.js' %}"></script>
+
+</body>
+
+</html>

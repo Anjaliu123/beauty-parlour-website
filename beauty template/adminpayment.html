@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+	<title>Beauty Salon a Beauty Category Bootstrap Responsive website Template | Home :: w3layouts</title>
+	<!-- Meta Tags -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="keywords" content="Beauty Salon Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template,
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony Ericsson, Motorola web design" />
+	<script type="application/x-javascript">
+		addEventListener("load", function () {
+			setTimeout(hideURLbar, 0);
+		}, false);
+
+		function hideURLbar() {
+			window.scrollTo(0, 1);
+		}
+	</script>
+	<!-- //Meta Tags -->
+	<!-- Style Sheets -->
+	<link href="{% static 'css/bootstrap.css' %}" rel="stylesheet" type="text/css" media="all" />
+	<!--// Bootstrap-CSS -->
+	<link href="{% static 'css/font-awesome.css' %}" rel="stylesheet">
+	<!--// Font-Awesome-CSS -->
+	<link rel="stylesheet" href="css/owl.carousel.css" type="text/css" media="all" />
+	<link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" property="" />
+	<!--// Owl-Carousel-CSS -->
+	<link href="{% static 'css/style.css' %}" rel="stylesheet" type="text/css" media="all" />
+	<!-- //Style Sheets -->
+	<!-- web-fonts -->
+	<link href="//fonts.googleapis.com/css?family=Khula:300,400,600,700,800}" rel="stylesheet">
+	<link href="//fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,400,400i,500,500i,600,600i,700,700i,800'" rel="stylesheet">
+	<!--// web-fonts -->
+</head>
+
+<body>
+	<!-- banner -->
+	<div class="banner jarallax" id="home">
+		<img class="jarallax-img" src="{% static 'images/22.jpg' %}" alt="">
+		<header>
+			<div class="container">
+				<div class="header-bottom-agileits">
+					<div class="w3-logo">
+																																									<h1><a href="orders"><span style="color:black">BEAU</span><span style="color:white">TIFY</span></a></h1>
+
+<!--						<h1>BEAUTIFY</a></h1>-->
+
+					</div>
+					<div class="clearfix"></div>
+				</div>
+			</div>
+		</header>
+		<!-- navigation -->
+		<div class="nav-bg">
+			<div class="container">
+<!--					<nav class="navbar navbar-default shift">-->
+					<!-- Brand and toggle get grouped for better mobile display -->
+					<div class="navbar-header">
+<!--						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"-->
+<!--							aria-expanded="false">-->
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+
+					</div>
+
+					</head>
+				</head>
+			<!--background-->
+<br>
+<style>
+	.previous {
+  color: white;
+}
+</style>
+<a href="admindetails" class="previous">&laquo; Back</a><br>
+<!--<b><h4><a href="admindetails">Home</a></h4></b></h4>-->
+<!--<b><h4><a href="book">makeupartist</a></h4></b>-->
+<!--<b><h4><a href="adpay">payment</a></h4></b>-->
+<!--<b><h4><a href="custdet">custdet</a></h4></b>-->
+<!--<b><h4><a href="beautiandetails">Makeupartist request</a></h4></b>-->
+<!--<b><h4><a href="Vfeedback">Feedback</a></h4></b>-->
+<!--<b><h4><a href="vcomp">Complaints</a></h4></b>-->
+<!--<b><h4><a href="logout">logout</a></h4></b>-->
+
+
+
+						</ul>
+
+			</div></div></div></body>			</div>
+<!--					 /.navbar-collapse-->
+
+				</nav>
+			</div>
+		</div>
+		<!-- //navigation -->
+		<br><br><br><br>
+		<div class="container" style="height:auto;width:1400px;background-color:gray;opacity:0.8">
+			<br>
+			<table border="2" align="center" class="table table-bordered">
+					<thead class="thead-light">
+					<tr>
+						<th><h3 style="color:white"><b>Username</b></h3></th>
+						<th><h3 style="color:white"><b>Makeupartist Name</b></h3></th>
+						<th><h3 style="color:white"><b>Date</b></h3></th>
+						<th><h3 style="color:white"><b>Amount</b></h3></th>
+<!--						<th><h4 style="color:white"><b>Total</b></h4></th>-->
+					</tr>
+					<tr>
+						{% for i in r %}
+						<td><b style="color:white">{{i.username}}</b></td>
+						<td><b style="color:white">{{i.artistname}}</b></td>
+						<td><b style="color:white">{{i.date}}</b></td>
+						<td><b style="color:white">{{i.amount}}</b></td>
+<!--						<td><b style="color:white">{{s1}}</b></td>-->
+					</tr>
+						{% endfor %}
+						<td><b></b>
+							<form method="POST" action="adpaytotl">
+								{% csrf_token %}
+								<b><input type="date" name="n1" placeholder="date"></b>
+								<b><input type="submit" value="Search" style="font-size: 15px"></b>
+							</form>
+						</b></td>
+									<td></td>
+									<td></td>
+					<td><b style="color:white">{{s1}}</b></td>
+
+					</thead>
+			</table>
+			<br>
+		</div>
+	<div class="banner-info">
+			<script src="{% static 'beautyparlour/js/responsiveslides.min.js' %}"></script>
+			<script>
+									// You can also use "$(window).load(function() {"
+									$(function () {
+									 // Slideshow 4
+									$("#slider3").responsiveSlides({
+										auto: true,
+										pager: false,
+										nav: true,
+										speed: 500,
+										namespace: "callbacks",
+										before: function () {
+									$('.events').append("<li>before event fired.</li>");
+									},
+									after: function () {
+										$('.events').append("<li>after event fired.</li>");
+										}
+										});
+										});
+			</script>
+
+		</div>
+</div>
+
+
+				</nav>
+			</div>
+		</div>
+		<!-- //navigation -->
+		<div class="container">
+			<!-- header -->
+			<!-- //header -->
+			<div class="agileits_w3layouts_banner_info">
+				<section class="slider">
+					<div class="flexslider">
+
+					</div></section></div></div>			</body>
+
+
+</html>

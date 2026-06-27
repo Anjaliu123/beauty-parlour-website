@@ -1,0 +1,57 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+  <title>Title</title>
+</head>
+<body>
+
+
+<table border = "6">
+<thead>
+<th>NAME</th><br>
+<th>USERADDRESS</th><br>
+<th>USEREMAIL</th><br>
+<th>PHONENUMBER</th><br>
+<th>ARTISTNAME</th><br>
+<th>ARTISTEMAIL</th><br>
+<th>BOOKINGDESCRITION</th><br>
+<th>APPOINTMENTDATE</th><br>
+<th>APPOINTMENTTIME</th><br>
+<th>ACTION</th><br>
+</thead>
+{% for i in data %}
+	<tbody>
+
+<tr>
+
+    <td>{{i.NAME}}</td><br>
+    <td>{{i.USERADDRESS}}</td><br>
+    <td>{{i.USEREMAIL}}</td><br>
+    <td>{{i.PHONENUMBER}}</td><br>
+    <th>ARTISTNAME</th><br>
+    <th>ARTISTEMAIL</th><br>
+    <td>{{i.BOOKINGDESCRITION}}</td><br>
+    <td>{{i.APPOINTMENTDATE}}</td><br>
+    <td>{{i.APPOINTMENTTIME}}</td><br>
+	<td>
+
+<!--        cla<a href="accepted/{{i.id}}"ss="btn-group btn btn-success">ACCEPT</a>-->
+<!--		<a href="rejected/{{i.id}}"class="btn-group btn btn-danger">REJECT</a>-->
+<!--		<a href="book"class="btn-group btn btn-success">BOOK</a>-->
+<!--        		<a href="cancel"class="btn-group btn btn-danger">CANCEL</a>-->
+
+    </td>
+
+</tr>
+</tbody>
+{% endfor %}
+</table>
+
+</body>
+
+
+</body>
+
+</body>
+</html>

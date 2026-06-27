@@ -1,0 +1,268 @@
+<!--&lt;!&ndash;<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"&ndash;&gt;-->
+<!--&lt;!&ndash;        "http://www.w3.org/TR/html4/loose.dtd">&ndash;&gt;-->
+<!--<html>-->
+<!--<head>-->
+<!--    <title>Title</title>-->
+<!--</head>-->
+<!--<body>-->
+<!--&lt;!&ndash;div class="contactbg">&ndash;&gt;-->
+<!--        <div class="container">-->
+<!--            <div class="row">-->
+<!--                <div class="col-md-12">-->
+<!--                    <div class="contacttitlepage">-->
+<!--                        <h2>Add Feedback</h2>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+
+<!--    </div>-->
+<!--    <div class="container">-->
+<!--        <div class="row">-->
+<!--            <div class=" col-md-6 offset-md-3">-->
+<!--                <div class="address">-->
+
+<!--                    <form method="POST" action="addfeedback" enctype="multipart/form-data">-->
+<!--                        {% csrf_token %}-->
+<!--&lt;!&ndash;						<form method="post" action="user">&ndash;&gt;-->
+<!--&lt;!&ndash;								 {% csrf_token %}&ndash;&gt;-->
+<!--		                <div class="text-center">-->
+<!--					<input type="text" name="p1" placeholder="USERNAME" required=""  hidden=""/><br><br>-->
+<!--					<input type="text" name="p2"  placeholder="NAME" required=""><br><br>-->
+
+
+
+<!--					<input placeholder="EMAIL" name="p3" type="text" required=""   pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"><br><br>-->
+
+<!--					<input placeholder="PHONENUMBER" name="p4" type="text" required="" pattern="[0-9]{10}"><br><br>-->
+
+<!--		<input type="text" name="p5"  placeholder="FEEDBACK" required=""><br><br>-->
+
+
+
+
+
+
+
+
+
+<!--		</div>-->
+
+
+
+<!--<div class="w3ls-contact  w3l-sub">-->
+<!--				<input type="submit" class="btn btn-defeault btn-send"  onclick="return confirm('Are you sure ??')">-->
+<!--			</div>-->
+
+
+<!--&lt;!&ndash;<div class="text-center"><button class='btn btn-success' type="submit">REGISTER</button></div><br><br>&ndash;&gt;-->
+
+
+<!--							</form>-->
+<!--                </div></div></div></div>				</body>	</li>-->
+
+
+<!--                    </form>		</div>		</form>-->
+<!--			</div>-->
+<!--		</form>-->
+<!--        </div></div></body></html>-->
+
+
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+	<title>Beauty Salon a Beauty Category Bootstrap Responsive website Template | Home :: w3layouts</title>
+	<!-- Meta Tags -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="keywords" content="Beauty Salon Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template,
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony Ericsson, Motorola web design" />
+	<script type="application/x-javascript">
+		addEventListener("load", function () {
+			setTimeout(hideURLbar, 0);
+		}, false);
+
+		function hideURLbar() {
+			window.scrollTo(0, 1);
+		}
+	</script>
+	<!-- //Meta Tags -->
+	<!-- Style Sheets -->
+	<link href="{% static 'css/bootstrap.css' %}" rel="stylesheet" type="text/css" media="all" />
+	<!--// Bootstrap-CSS -->
+	<link href="{% static 'css/font-awesome.css' %}" rel="stylesheet">
+	<!--// Font-Awesome-CSS -->
+	<link rel="stylesheet" href="css/owl.carousel.css" type="text/css" media="all" />
+	<link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" property="" />
+	<!--// Owl-Carousel-CSS -->
+	<link href="{% static 'css/style.css' %}" rel="stylesheet" type="text/css" media="all" />
+	<!-- //Style Sheets -->
+	<!-- web-fonts -->
+	<link href="//fonts.googleapis.com/css?family=Khula:300,400,600,700,800}" rel="stylesheet">
+	<link href="//fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,400,400i,500,500i,600,600i,700,700i,800'" rel="stylesheet">
+	<!--// web-fonts -->
+</head>
+
+<body>
+	<!-- banner -->
+	<div class="banner jarallax" id="home">
+		<img class="jarallax-img" src="{% static 'images/p6.jpg' %}" alt="">
+		<header>
+			<div class="container">
+				<div class="header-bottom-agileits">
+					<div class="w3-logo">
+																							<h1><a href="orders"><span style="color:black">BEAU</span><span style="color:white">TIFY</span></a></h1>
+
+
+					</div>
+					<div class="clearfix"></div>
+				</div>
+			</div>
+		</header>
+		<!-- navigation -->
+		<div class="nav-bg">
+			<div class="container">
+<!--					<nav class="navbar navbar-default shift">-->
+					<!-- Brand and toggle get grouped for better mobile display -->
+					<div class="navbar-header">
+<!--						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"-->
+<!--							aria-expanded="false">-->
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+
+					</div>
+
+					</head>
+				</head>
+<body>
+<!--background-->
+<br>
+<style>
+	.previous {
+  color: white;
+}
+</style>
+<!--	<h2>Make an appointment</h2>-->
+
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="userhome" class="previous">&laquo; Back</a>
+<h1 style="color:white">Beautify Feedback Form </h1>
+    <div class="bg-agile">
+	<div class="book-appointment">
+        <form method="POST" action="addfeedback" enctype="multipart/form-data">
+                        {% csrf_token %}
+<!--						<form method="post" action="user">-->
+<!--								 {% csrf_token %}-->
+		                <div class="text-center">
+					<input type="text" name="p1" value={{r}} placeholder="USERNAME" required=""  hidden=""/><br><br>
+					<input type="text" name="p2"  placeholder="NAME" required=""><br><br>
+
+
+
+					<input placeholder="EMAIL" name="p3" type="text" required=""   pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"><br><br>
+
+					<input placeholder="PHONENUMBER" name="p4" type="text" required="" pattern="[0-9]{10}"><br><br>
+
+		<input type="text" name="p5"  placeholder="FEEDBACK" required=""><br><br>
+
+                        </div>
+
+
+
+<div class="w3ls-contact  w3l-sub">
+    		                <div class="text-center">
+
+				<input type="submit" class="btn btn-defeault btn-send"  onclick="return confirm('Are you sure ??')">
+			</div>
+
+
+<!--<div class="text-center"><button class='btn btn-success' type="submit">REGISTER</button></div><br><br>-->
+
+
+							</form>
+                </div></div></div></div>				</body>	</li>
+
+
+                    </form>		</div>		</form>
+			</div>
+		</form>
+        </div></div></
+
+<!--	<h2>Make an appointment</h2>-->
+<!--			<form action="booking" method="post">-->
+<!--				{% csrf_token %}-->
+<!--					<div class="gaps">-->
+<!--						<p>Your Name</p>-->
+<!--						<input type="text" name="a1" placeholder="" required=""/>-->
+<!--					</div>-->
+<!--					<div class="gaps">-->
+<!--						<p>Email Id</p>-->
+<!--						<input type="email" name="b1" placeholder="" required=""   pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$">-->
+<!--					</div>-->
+<!--					<div class="gaps">-->
+<!--						<p>Contact Number</p>-->
+<!--						<input type="text" name="c1" placeholder="" required="" pattern="[0-9]{10}"/>-->
+<!--					</div>-->
+<!--					<div class="gaps">-->
+<!--						<p>Book Your Date</p>-->
+<!--						<input name="d1" id="dateInput" type="date" value="" required="" min="" max="01-12-2030">-->
+<!--					</div>-->
+<!--					<div class="gaps">-->
+<!--						<p>Book Your Time</p>-->
+<!--						<input type="time" id="timepicker" name="e1"  value="">-->
+<!--					</div>-->
+
+<!--				{% for i in r %}-->
+<!--					<div class="left-agileits-w3layouts same">-->
+<!--						<div class="">-->
+<!--	&lt;!&ndash;						<p>Username</p>&ndash;&gt;-->
+<!--							<input type="text" name="g1" value="{{r1}}" placeholder="" required="" hidden="">-->
+<!--						</div>-->
+<!--						<div class="">-->
+<!--	&lt;!&ndash;						<p>BeautyParlour name</p>&ndash;&gt;-->
+<!--							<input type="text" name="h1" value="{{i.name}}" placeholder="" required="" hidden="">-->
+<!--						</div>-->
+<!--					</div>-->
+<!--					<div class="right-agileinfo same">-->
+<!--				{% endfor %}-->
+<!--						<div class="gaps">-->
+<!--						<p>Services</p>-->
+<!--						<select class="form-control" name="service">-->
+<!--							{% for i in r %}-->
+<!--							<option></option>-->
+<!--							<option value="{{i.addservice}}">{{i.addservice}}</option>-->
+<!--							 {% endfor %}-->
+<!--						</select>-->
+<!--						</div>-->
+
+
+
+<!--			</div>-->
+
+<!--			<div class="clear"></div>-->
+<!--				<input type="submit" value="Make an appointment" class="btn btn-defeault btn-send"  onclick="return confirm('Are you sure ??')">-->
+<!--			</form>-->
+<!--		</div>-->
+
+
+
+
+
+<!--				</nav>-->
+<!--			</div>-->
+<!--		</div>-->
+		<!-- //navigation -->
+		<div class="container">
+			<!-- header -->
+			<!-- //header -->
+			<div class="agileits_w3layouts_banner_info">
+				<section class="slider">
+					<div class="flexslider">
+
+</body>
+
+</html>

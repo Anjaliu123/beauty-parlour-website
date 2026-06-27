@@ -1,0 +1,239 @@
+<!--<!DOCTYPE HTML>-->
+<!--<html lang="en">-->
+<!--{% load static %}-->
+<!--<head>-->
+<!--	<title>Shine Login Form Responsive Widget Template :: w3layouts</title>-->
+<!--	&lt;!&ndash; Meta tag Keywords &ndash;&gt;-->
+<!--	<meta name="viewport" content="width=device-width, initial-scale=1">-->
+<!--	<meta charset="utf-8">-->
+<!--	<meta name="keywords" content="Shine Login Form Responsive Widget,Login form widgets, Sign up Web forms , Login signup Responsive web form,Flat Pricing table,Flat Drop downs,Registration Forms,News letter Forms,Elements"-->
+<!--	/>-->
+<!--	<script type="application/x-javascript">-->
+<!--		addEventListener("load", function () {-->
+<!--			setTimeout(hideURLbar, 0);-->
+<!--		}, false);-->
+
+<!--		function hideURLbar() {-->
+<!--			window.scrollTo(0, 1);-->
+<!--		}-->
+<!--	</script>-->
+<!--	&lt;!&ndash; Meta tag Keywords &ndash;&gt;-->
+<!--	&lt;!&ndash; css files &ndash;&gt;-->
+<!--	<link rel="stylesheet" href="{% static 'changepass/css/style1.css' %}" type="text/css" media="all" />-->
+<!--	&lt;!&ndash; Style-CSS &ndash;&gt;-->
+<!--	<link rel="stylesheet" href="{% static 'changepass/css/font-awesome.css' %}">-->
+<!--	&lt;!&ndash; Font-Awesome-Icons-CSS &ndash;&gt;-->
+<!--	&lt;!&ndash; //css files &ndash;&gt;-->
+<!--	&lt;!&ndash; online-fonts &ndash;&gt;-->
+<!--<link href="//fonts.googleapis.com/css?family=PT+Serif:400,400i,700,700i" rel="stylesheet">-->
+<!--	&lt;!&ndash; //online-fonts &ndash;&gt;-->
+<!--</head>-->
+
+<!--<body>-->
+<!--<style>-->
+<!--	.previous {-->
+<!--	color:af09cdd6-->
+<!--}-->
+<!--</style>-->
+<!--<br>-->
+<!--&nbsp;&nbsp;&nbsp;-->
+<!--<a href="profile" class="previous">&laquo; Back</a>-->
+<!--	&lt;!&ndash;header&ndash;&gt;-->
+<!--	<div class="header-w3l">-->
+<!--&lt;!&ndash;		<h1>Shine Login Form</h1>&ndash;&gt;-->
+<!--	</div>-->
+<!--	&lt;!&ndash;//header&ndash;&gt;-->
+<!--	<div class="main-content-agile">-->
+<!--		<div class="sub-main-w3">-->
+<!--			<h2>Change Password</h2>-->
+<!--			<form action="change" method="post">-->
+<!--				{% csrf_token %}-->
+<!--				<div class="pom-agile">-->
+<!--					<span class="fa fa-user" aria-hidden="true"></span>-->
+<!--					<input placeholder="Username" name="username" class="user" type="text" required="">-->
+<!--				</div>-->
+<!--				<div class="pom-agile">-->
+<!--					<span class="fa fa-key" aria-hidden="true"></span>-->
+<!--					<input placeholder="Old Password" name="oldpassword" class="pass" type="password" required="">-->
+<!--				</div>-->
+<!--				<div class="pom-agile">-->
+<!--					<span class="fa fa-key" aria-hidden="true"></span>-->
+<!--					<input placeholder="New Password" name="newpassword" class="pass" type="password" required="">-->
+<!--				</div>-->
+<!--&lt;!&ndash;				<div class="pom-agile">&ndash;&gt;-->
+<!--&lt;!&ndash;					<span class="fa fa-user" aria-hidden="true"></span>&ndash;&gt;-->
+<!--&lt;!&ndash;					<input placeholder="Username" name="n1" class="user" type="email" required="">&ndash;&gt;-->
+<!--&lt;!&ndash;				</div>&ndash;&gt;-->
+<!--&lt;!&ndash;				<div class="pom-agile">&ndash;&gt;-->
+<!--&lt;!&ndash;					<span class="fa fa-key" aria-hidden="true"></span>&ndash;&gt;-->
+<!--&lt;!&ndash;					<input placeholder="Old Password" name="n2" class="pass" type="password" required="">&ndash;&gt;-->
+<!--&lt;!&ndash;				</div>&ndash;&gt;-->
+<!--&lt;!&ndash;				<div class="pom-agile">&ndash;&gt;-->
+<!--&lt;!&ndash;					<span class="fa fa-key" aria-hidden="true"></span>&ndash;&gt;-->
+<!--&lt;!&ndash;					<input placeholder="New Password" name="n3" class="pass" type="password" required="">&ndash;&gt;-->
+<!--&lt;!&ndash;				</div>&ndash;&gt;-->
+<!--&lt;!&ndash;				<div class="sub-w3l">&ndash;&gt;-->
+<!--&lt;!&ndash;					<div class="sub-agile">&ndash;&gt;-->
+<!--&lt;!&ndash;						<input type="checkbox" id="brand1" value="">&ndash;&gt;-->
+<!--&lt;!&ndash;						<label for="brand1">&ndash;&gt;-->
+<!--&lt;!&ndash;							<span></span>Remember me</label>&ndash;&gt;-->
+<!--&lt;!&ndash;					</div>&ndash;&gt;-->
+<!--&lt;!&ndash;					<a href="#">Forgot Password?</a>&ndash;&gt;-->
+<!--&lt;!&ndash;					<div class="clear"></div>&ndash;&gt;-->
+<!--&lt;!&ndash;				</div>&ndash;&gt;-->
+<!--				<div class="right-w3l">-->
+<!--					<input type="submit" value="Register" class="btn btn-defeault btn-send"  onclick="return confirm('Are you sure ??')">-->
+<!--				</div>-->
+<!--			</form>-->
+<!--		</div>-->
+<!--&lt;!&ndash;		<script>&ndash;&gt;-->
+<!--&lt;!&ndash;				   function cpass() {&ndash;&gt;-->
+<!--&lt;!&ndash;				   alert("Success");&ndash;&gt;-->
+<!--&lt;!&ndash;				   }&ndash;&gt;-->
+<!--&lt;!&ndash;         		</script>&ndash;&gt;-->
+<!--	</div>-->
+<!--	&lt;!&ndash;//main&ndash;&gt;-->
+<!--	&lt;!&ndash;footer&ndash;&gt;-->
+<!--&lt;!&ndash;&lt;!&ndash;	<div class="footer">&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;&lt;!&ndash;		<p>&copy; 2018 Shine Login Form. All rights reserved | Design by&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;&lt;!&ndash;			<a href="http://w3layouts.com">W3layouts</a>&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;&lt;!&ndash;		</p>&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;&lt;!&ndash;	</div>- &ndash;&gt;-->
+
+
+<!--</body>-->
+
+<!--</html>-->
+
+
+
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+
+<head>
+	<title>Beauty Salon a Beauty Category Bootstrap Responsive website Template | Home :: w3layouts</title>
+	<!-- Meta Tags -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="keywords" content="Beauty Salon Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template,
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony Ericsson, Motorola web design" />
+	<script type="application/x-javascript">
+		addEventListener("load", function () {
+			setTimeout(hideURLbar, 0);
+		}, false);
+
+		function hideURLbar() {
+			window.scrollTo(0, 1);
+		}
+	</script>
+	<!-- //Meta Tags -->
+	<!-- Style Sheets -->
+	<link href="{% static 'css/bootstrap.css' %}" rel="stylesheet" type="text/css" media="all" />
+	<!--// Bootstrap-CSS -->
+	<link href="{% static 'css/font-awesome.css' %}" rel="stylesheet">
+	<!--// Font-Awesome-CSS -->
+	<link rel="stylesheet" href="css/owl.carousel.css" type="text/css" media="all" />
+	<link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" property="" />
+	<!--// Owl-Carousel-CSS -->
+	<link href="{% static 'css/style.css' %}" rel="stylesheet" type="text/css" media="all" />
+	<!-- //Style Sheets -->
+	<!-- web-fonts -->
+	<link href="//fonts.googleapis.com/css?family=Khula:300,400,600,700,800}" rel="stylesheet">
+	<link href="//fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,400,400i,500,500i,600,600i,700,700i,800'" rel="stylesheet">
+	<!--// web-fonts -->
+</head>
+
+<body>
+	<!-- banner -->
+<div class="banner jarallax" id="home">
+		<img class="jarallax-img" src="{% static 'images/1.jpg' %}" alt="">
+		<header>
+			<div class="container">
+				<div class="header-bottom-agileits">
+					<div class="w3-logo">
+<!--						<h1><a href="beautiandetails">BEAUTIFY</a></h1>-->
+						<div class="header-bottom">
+<!--			<div class="container">-->
+<!--				<div class="col-md-3 logo-w3l">-->
+<!--					<h1><a class="navbar-brand" href="profile.html"><span>B</span>eautify</a></h1>-->
+				</div>
+
+					</div>
+					<div class="clearfix"></div>
+				</div>
+            </div>
+		</header>
+		<!-- navigation -->
+		<div class="nav-bg">
+<!--			<div class="container">-->
+<!--					<nav class="navbar navbar-default shift">-->
+					<!-- Brand and toggle get grouped for better mobile display -->
+<!--					<div class="navbar-header">-->
+<!--						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"-->
+<!--							aria-expanded="false">-->
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+
+					</div>
+
+					</head>
+				</head>
+<body>
+<!--background-->
+<br>
+<style>
+	.previous {
+  color: white;
+}
+</style>
+<a href="profile" class="previous">&laquo; Back</a>
+
+	<!--header-->
+	<div class="header-w3l">
+<!--		<h1>Shine Login Form</h1>-->
+	</div>
+	<!--//header-->
+	<div class="main-content-agile">
+		<div class="sub-main-w3">
+			<div class="text-center">
+			<h2>Change Password</h2>
+				<!--			<div class="container">-->
+<!--				<div class="col-md-3 logo-w3l">-->
+<!--					<h1><a class="navbar-brand" href="profile.html"><span>B</span>eautify</a></h1>-->
+
+			<form action="change" method="post">
+				{% csrf_token %}
+				<div class="pom-agile">
+					<span class="fa fa-user" aria-hidden="true"></span>
+					<input placeholder="Username" name="username" class="user" type="text" required="">
+				</div>
+				<div class="pom-agile">
+					<span class="fa fa-key" aria-hidden="true"></span>
+					<input placeholder="Old Password" name="oldpassword" class="pass" type="password" required="">
+				</div>
+				<div class="pom-agile">
+					<span class="fa fa-key" aria-hidden="true"></span>
+					<input placeholder="New Password" name="newpassword" class="pass" type="password" required="">
+				</div>
+
+
+				<div class="right-w3l">
+					<input type="submit" value="Register" class="btn btn-defeault btn-send"  onclick="return confirm('Are you sure ??')">
+				</div>
+			</form>
+			</div></div></div></body>
+
+			</form>		</div></div></div></body></div></body></html></body>
+</html>
+
+				</ul>			</div>
+
+
+		</div></div></body>
+
+</div></body></html>
+

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<table border = "6">
+<thead>
+<th>USERNAME</th><br>
+<th>USERADDRESS</th><br>
+<th>EMAILID</th><br>
+<th>PHONENUMBER</th><br>
+<th>BOOKINGDESCRITION</th><br>
+<th>APPOINTMENTDATE</th><br>
+<th>APPOINTMENTTIME</th><br>
+<!--<th>ACTION</th><br>-->
+</thead>
+{% for i in data %}
+	<tbody>
+
+<tr>
+
+    <td>{{i.USERNAME}}</td><br>
+    <td>{{i.USERADDRESS}}</td><br>
+    <td>EMAILID</td><br>
+    <td>{{i.PHONENUMBER}}</td><br>
+    <td>{{i.BOOKINGDESCRITION}}</td><br>
+    <td>{{i.APPOINTMENTDATE}}</td><br>
+    <td>{{i.APPOINTMENTTIME<}}</td><br>
+<!--	<td>-->
+<!--		<a href="book"class="btn-group btn btn-success">BOOK</a>-->
+<!--        		<a href="cancel"class="btn-group btn btn-danger">CANCEL</a>-->
+
+<!--    </td>-->
+
+    <form action="accept" method="POST">
+							{% csrf_token %}
+								<input type="text" value="{{i.username}}" name="username" hidden="">
+								<input type="text" value="{{i.email}}" name="email" hidden="">
+								<input type="text" value="{{i.name}}" name="name" hidden="">
+								<input type="submit" value="Approve" style="background-color:#90EE90;font-size: 15px">
+						</form>
+						</td>
+						<td>
+							<form action="reject" method="POST">
+							{% csrf_token %}
+								<input type="text" value="{{i.username}}" name="username" hidden="">
+								<input type="submit" value="Reject" style=" background-color: #f44336;font-size: 15px">
+						</form>
+						</td>
+				</tr>
+
+        			{% endfor %}
+    			</thead>
+			</table>
+		</div>
+		<div class="banner-info">
+			<script src="{% static 'beautyparlour/js/responsiveslides.min.js' %}"></script>
+			<script>
+									// You can also use "$(window).load(function() {"
+									$(function () {
+									 // Slideshow 4
+									$("#slider3").responsiveSlides({
+										auto: true,
+										pager: false,
+										nav: true,
+										speed: 500,
+										namespace: "callbacks",
+										before: function () {
+									$('.events').append("<li>before event fired.</li>");
+									},
+									after: function () {
+										$('.events').append("<li>after event fired.</li>");
+										}
+										});
+										});
+			</script>
+
+		</div>
+</div>
+
+</tr>
+</tbody>
+{% endfor %}
+</table>
+
+</body>
+
+
+</body>
+</html>

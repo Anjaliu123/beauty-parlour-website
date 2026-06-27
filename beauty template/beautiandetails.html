@@ -1,0 +1,162 @@
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+	<title>Beauty Salon a Beauty Category Bootstrap Responsive website Template | Home :: w3layouts</title>
+	<!-- Meta Tags -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="keywords" content="Beauty Salon Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template,
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony Ericsson, Motorola web design" />
+	<script type="application/x-javascript">
+		addEventListener("load", function () {
+			setTimeout(hideURLbar, 0);
+		}, false);
+
+		function hideURLbar() {
+			window.scrollTo(0, 1);
+		}
+	</script>
+	<!-- //Meta Tags -->
+	<!-- Style Sheets -->
+	<link href="{% static 'css/bootstrap.css' %}" rel="stylesheet" type="text/css" media="all" />
+	<!--// Bootstrap-CSS -->
+	<link href="{% static 'css/font-awesome.css' %}" rel="stylesheet">
+	<!--// Font-Awesome-CSS -->
+	<link rel="stylesheet" href="css/owl.carousel.css" type="text/css" media="all" />
+	<link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" property="" />
+	<!--// Owl-Carousel-CSS -->
+	<link href="{% static 'css/style.css' %}" rel="stylesheet" type="text/css" media="all" />
+	<!-- //Style Sheets -->
+	<!-- web-fonts -->
+	<link href="//fonts.googleapis.com/css?family=Khula:300,400,600,700,800}" rel="stylesheet">
+	<link href="//fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,400,400i,500,500i,600,600i,700,700i,800'" rel="stylesheet">
+	<!--// web-fonts -->
+</head>
+
+<body>
+	<!-- banner -->
+	<div class="banner jarallax" id="home">
+		<img class="jarallax-img" src="{% static 'images/22.jpg' %}" alt="">
+		<header>
+			<div class="container">
+				<div class="header-bottom-agileits">
+					<div class="w3-logo">
+																																			<h1><a><span style="color:black">BEAU</span><span style="color:white">TIFY</span></a></h1>
+
+<!--						<h1>BEAUTIFY</a></h1>-->
+
+					</div>
+					<div class="clearfix"></div>
+				</div>
+			</div>
+		</header>
+		<!-- navigation -->
+		<div class="nav-bg">
+			<div class="container">
+<!--					<nav class="navbar navbar-default shift">-->
+					<!-- Brand and toggle get grouped for better mobile display -->
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+							aria-expanded="false">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+
+					</div>
+
+					</head>
+
+<body>
+
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="admindetails" class="previous">&laquo; Back</a>
+
+<div class="text-center">
+	<h1 style="color:white">WELCOME TO BEAUTIFY </h1>
+
+<h1 style="color:white">BEAUTICIAN DETAILS</H1></div>
+
+
+<li>
+						<div class="w3layouts-banner-top w3layouts-banner-top1">
+								<br><br><br><br><br><br><br><br><br><br><br><br>
+							<div class="container" style="height:auto;width:1300px;background-color:#410a0994;opacity:10">
+<!--								<div class="slider-info">-->
+									<br>
+									<table border="2" align="center" class="table table-bordered">
+										<thead class="thead-light">
+										<tr>
+<!--<table border = "6">-->
+<!--<thead>-->
+											<th><h4 style="color:black">NAME</h4></th><br>
+<th><h4 style="color:black">ADDRESS</h4></th><br>
+<th><h4 style="color:black">PHONENUMBER</h4></th><br>
+<th><h4 style="color:black">USERNAME</h4></th><br>
+<th><h4 style="color:black">EMAIL</h4></th><br>
+<th><h4 style="color:black">PHOTO</h4></th><br>
+
+<th><h4 style="color:black">LICENSE</h4></th><br>
+<th><h4 style="color:black">LOCATION</h4></th><br>
+<th><h4 style="color:black">TIME</h4></th><br>
+<th><h4 style="color:black">ACTION</h4></th><br>
+
+</thead>
+
+{% for i in data %}
+	<tbody>
+
+<tr>
+
+	<td><b><h5 style="color:white">{{i.name}}</h5></b></td><br>
+	<td><b><h5 style="color:white">{{i.address}}</h5></b></td><br>
+    <td><b><h5 style="color:white">{{i.phonenumber}}</h5></b></td><br>
+	<td><b><h5 style="color:white">{{i.username}}</h5></b></td><br>
+    <td><b><h5 style="color:white">{{i.email}}</h5></b></td><br>
+							<td><img src="{{i.photo.url}}" height="100px" width="100px"></td>
+							<td><img src="{{i.license.url}}" height="100px" width="100px"></td>
+
+<!--	<td><img src="{{i.photo.url}}" height="200px" width="200px" class="view-image"></td>-->
+<!--	<td><img src="{{i.license.url}}" height="100px" width="100px" class="view-image"></td>-->
+
+	<td><b><h5 style="color:white">{{i.location}}</h5></b></td><br>
+	<td><b><h5 style="color:white">{{i.time}}</h5></b></td><br>
+<!--	<td>{{i.action}}</td><br>-->
+
+
+
+
+
+
+	<td>
+<!--				<a href="booking"class="btn-group btn btn-success">BOOK</a>-->
+
+		<a href="accepted/{{i.id}}" class="btn-group btn btn-success">ACCEPT</a>
+		<a href="rejected/{{i.id}}" class="btn-group btn btn-danger">REJECT</a>
+	</td>
+
+</tr>
+</tbody>
+{% endfor %}
+</table>
+
+
+<!--<a href="update">update password</a>-->
+<!--<a href="logout">Logout</a>-->
+
+										</tr>
+									</table></div>		</thead>					</div></body>
+			</div></div></div>
+</body></html>
+
+</body>
+
+			</div></div></html></div>

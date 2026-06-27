@@ -1,0 +1,472 @@
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!--<!DOCTYPE html>-->
+<!--<html>-->
+<!--{% load static %}-->
+<!--<head>-->
+<!--<title>Spasol a Beauty and Spa Category Flat Bootstrap Responsive Website Template | Home :: w3layouts</title>-->
+<!--&lt;!&ndash; for-mobile-apps &ndash;&gt;-->
+<!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
+<!--<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />-->
+<!--<meta name="keywords" content="Spasol Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template,-->
+<!--Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />-->
+<!--<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);-->
+<!--		function hideURLbar(){ window.scrollTo(0,1); } </script>-->
+<!--&lt;!&ndash; //for-mobile-apps &ndash;&gt;-->
+<!--<link href="{% static 'beautyparlour/css/bootstrap.css' %}" rel="stylesheet" type="text/css" media="all" />-->
+<!--<link href="{% static 'beautyparlour/css/style.css' %}" rel="stylesheet" type="text/css" media="all" />-->
+<!--&lt;!&ndash; js &ndash;&gt;-->
+<!--<script src="{% static 'beautyparlour/js/jquery-1.11.1.min.js' %}"></script>-->
+<!--&lt;!&ndash; //js &ndash;&gt;-->
+<!--<link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>-->
+<!--	&lt;!&ndash; start-smoth-scrolling &ndash;&gt;-->
+<!--		<script type="text/javascript" src="{% static 'beautyparlour/js/move-top.js' %}"></script>-->
+<!--		<script type="text/javascript" src="{% static 'beautyparlour/js/easing.js' %}"></script>-->
+<!--		<script type="text/javascript">-->
+<!--			jQuery(document).ready(function($) {-->
+<!--				$(".scroll").click(function(event){-->
+<!--					event.preventDefault();-->
+<!--					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);-->
+<!--				});-->
+<!--			});-->
+<!--		</script>-->
+<!--	&lt;!&ndash; start-smoth-scrolling &ndash;&gt;-->
+<!--</head>-->
+<!--<body>-->
+<!--&lt;!&ndash; banner &ndash;&gt;-->
+<!--<div class="banner">-->
+<!--	<div class="container" style="width:auto">-->
+<!--		<div class="header">-->
+<!--			<div class="logo">-->
+<!--				<h1>-->
+<!--					<a class="link link&#45;&#45;yaku" href="index.html">-->
+<!--						<span>B</span><span>e</span><span>a</span><span>u</span><span>t</span><span>y</span>-->
+<!--					</a>-->
+<!--				</h1>-->
+<!--			</div>-->
+<!--			<div class="navigation">-->
+<!--				<span class="menu"><img src="images/menu.png" alt=""/></span>-->
+<!--				<ul class="nav1">-->
+<!--					<li><a class="hvr-overline-from-center button2 " href="pro1">Home</a></li>-->
+<!--					<li><a class="hvr-overline-from-center button2 active" href="maprofile">Profile</a></li>-->
+<!--&lt;!&ndash;					<li><a class="hvr-overline-from-center button2" href="adser">Add services</a></li>&ndash;&gt;-->
+<!--&lt;!&ndash;					<li><a class="hvr-overline-from-center button2" href="vser">View services</a></li>&ndash;&gt;-->
+<!--&lt;!&ndash;					<li><a class="hvr-overline-from-center button2" href="vbbp">Appointments</a></li>&ndash;&gt;-->
+<!--&lt;!&ndash;					<li><a class="hvr-overline-from-center button2" href="bppay">Payment</a></li>&ndash;&gt;-->
+<!--					<li><a class="hvr-overline-from-center button2" href="lo">Logout</a></li>-->
+<!--&lt;!&ndash;					<li><a class="hvr-overline-from-center button2" href="shortcodes.html">Short Codes</a></li>&ndash;&gt;-->
+<!--&lt;!&ndash;					<li><a class="hvr-overline-from-center button2" href="contact.html">Contact</a></li>&ndash;&gt;-->
+<!--				</ul>-->
+
+<!--				&lt;!&ndash; script for menu &ndash;&gt;-->
+<!--					<script>-->
+<!--						$( "span.menu" ).click(function() {-->
+<!--						$( "ul.nav1" ).slideToggle( 300, function() {-->
+<!--						 // Animation complete.-->
+<!--						});-->
+<!--						});-->
+<!--					</script>-->
+<!--				&lt;!&ndash; //script for menu &ndash;&gt;-->
+<!--			</div>-->
+
+<!--&lt;!&ndash;			<div class="search">&ndash;&gt;-->
+<!--&lt;!&ndash;				<form>&ndash;&gt;-->
+<!--&lt;!&ndash;					<input type="search" value="Search" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Search';}" required="">&ndash;&gt;-->
+<!--&lt;!&ndash;					<input type="submit" value=" ">&ndash;&gt;-->
+<!--&lt;!&ndash;				</form>&ndash;&gt;-->
+<!--&lt;!&ndash;			</div>&ndash;&gt;-->
+<!--			<div class="clearfix"></div>-->
+<!--		</div>-->
+<!--		<style>-->
+<!--			/* CSS code */-->
+<!--			.myDivision {-->
+<!--				width:1450px; /* Set the width to 300 pixels */-->
+<!--				height:auto;-->
+<!--				background-color: rgb(0 0 0 / 80%); /* Optional: Add background color */-->
+<!--				padding: 20px;/* Optional: Add padding */-->
+<!--				opacity:0.7-->
+<!--		</style>-->
+<!--		<br><br><br><br>-->
+<!--		<div class="myDivision">-->
+<!--			<br>-->
+<!--			<table border="2" align="center" class="table table-bordered">-->
+<!--				<thead class="thead-light">-->
+<!--				<tr>-->
+<!--					<th><h4 style="color:white"><b>Name</b></h4></th>-->
+<!--&lt;!&ndash;					<th><h4 style="color:white"><b>Owner name</b></h4></th>&ndash;&gt;-->
+<!--					<th><h4 style="color:white"><b>Address</b></h4></th>-->
+<!--					<th><h4 style="color:white"><b>Phone number/Email</b></h4></th>-->
+<!--										<th><h4 style="color:white"><b>Username</b></h4></th>-->
+
+<!--					<th><h4 style="color:white"><b>Photo</b></h4></th>-->
+<!--&lt;!&ndash;					<th><h4><b>Email</b></h4></th>&ndash;&gt;-->
+<!--					<th><h4 style="color:white"><b>License</b></h4></th>-->
+<!--					<th><h4 style="color:white"><b>Location</b></h4></th>-->
+<!--&lt;!&ndash;					<th><h4 style="color:white"><b>Action</b></h4></th>&ndash;&gt;-->
+<!--					<th><h4 style="color:white"><b>Update</b></h4></th>-->
+<!--					<th><h4 style="color:white"><b>Change Password</b></h4></th>-->
+<!--				</tr>-->
+<!--				<tr>-->
+<!--					{% for i in r %}-->
+<!--					<td><b style="color:white">{{i.name}}</b></td>-->
+<!--&lt;!&ndash;					<td><b style="color:white">{{i.owner_name}}</b></td>&ndash;&gt;-->
+<!--					<td><b style="color:white">{{i.address}}</b></td>-->
+<!--					<td><b style="color:white">{{i.phonenumber}}<br>-->
+<!--					     {{i.email}}</b></td>-->
+<!--										<td><b style="color:white">{{i.username}}</b></td>-->
+
+<!--&lt;!&ndash;					<td><img src="{{i.photo.url}}" height="100px" width="100px"></td>&ndash;&gt;-->
+<!--&lt;!&ndash;					<td><b>{{i.email}}</b></td>&ndash;&gt;-->
+<!--					<td><img src="{{i.photo.url}}" height="100px" width="100px"></td>-->
+<!--							<td><img src="{{i.license.url}}" height="100px" width="100px"></td>-->
+
+<!--&lt;!&ndash;					<td><img src="{{i.license.url}}" height="100px" width="100px"></td>&ndash;&gt;-->
+<!--					<td><b style="color:white">{{i.location}}</b></td>-->
+<!--&lt;!&ndash;					<td><b style="color:white">{{i.action}}</b></td>&ndash;&gt;-->
+<!--					<td><b style="color:white">-->
+<!--						<form method="POST" action="upbp">-->
+<!--							{% csrf_token %}-->
+<!--							<input type="text" value="{{i.username}}" name="b1" hidden="">-->
+<!--							<input type="submit" value="UPDATE" class="btn btn-primary">-->
+<!--						</form>-->
+<!--					</b></td>-->
+<!--					<td><h4><b style="color:red"><a href="changebp">Change Password</a></b></h4></td>-->
+<!--				</tr>-->
+<!--				    {% endfor %}-->
+<!--				</thead>-->
+<!--			</table>-->
+<!--		</div>-->
+<!--		<div class="banner-info">-->
+<!--			<script src="{% static 'beautyparlour/js/responsiveslides.min.js' %}"></script>-->
+<!--			<script>-->
+<!--									// You can also use "$(window).load(function() {"-->
+<!--									$(function () {-->
+<!--									 // Slideshow 4-->
+<!--									$("#slider3").responsiveSlides({-->
+<!--										auto: true,-->
+<!--										pager: false,-->
+<!--										nav: true,-->
+<!--										speed: 500,-->
+<!--										namespace: "callbacks",-->
+<!--										before: function () {-->
+<!--									$('.events').append("<li>before event fired.</li>");-->
+<!--									},-->
+<!--									after: function () {-->
+<!--										$('.events').append("<li>after event fired.</li>");-->
+<!--										}-->
+<!--										});-->
+<!--										});-->
+<!--			</script>-->
+
+<!--		</div>-->
+<!--</div>-->
+<!--&lt;!&ndash;	<div class="container" style="height:auto;width:1400px;background-color:white;opacity:0.6">&ndash;&gt;-->
+<!--&lt;!&ndash;		<br>&ndash;&gt;-->
+<!--&lt;!&ndash;		<table border="2" align="center" class="table table-bordered">&ndash;&gt;-->
+<!--&lt;!&ndash;						<thead class="thead-light">&ndash;&gt;-->
+<!--&lt;!&ndash;						<tr>&ndash;&gt;-->
+<!--&lt;!&ndash;							<th>Name</th>&ndash;&gt;-->
+<!--&lt;!&ndash;							<th>Owner name</th>&ndash;&gt;-->
+<!--&lt;!&ndash;							<th>Address</th>&ndash;&gt;-->
+<!--&lt;!&ndash;							<th>Phone number</th>&ndash;&gt;-->
+<!--&lt;!&ndash;							<th>Photo</th>&ndash;&gt;-->
+<!--&lt;!&ndash;							<th>Email</th>&ndash;&gt;-->
+<!--&lt;!&ndash;							<th>License</th>&ndash;&gt;-->
+<!--&lt;!&ndash;							<th>Location</th>&ndash;&gt;-->
+<!--&lt;!&ndash;							<th>Username</th>&ndash;&gt;-->
+<!--&lt;!&ndash;							<th>Action</th>&ndash;&gt;-->
+<!--&lt;!&ndash;							<th></th>&ndash;&gt;-->
+<!--&lt;!&ndash;							<th></th>&ndash;&gt;-->
+<!--&lt;!&ndash;						</tr>&ndash;&gt;-->
+<!--&lt;!&ndash;						<tr>&ndash;&gt;-->
+<!--&lt;!&ndash;							{% for i in r %}&ndash;&gt;-->
+<!--&lt;!&ndash;								<td>{{i.name}}</td>&ndash;&gt;-->
+<!--&lt;!&ndash;								<td>{{i.owner_name}}</td>&ndash;&gt;-->
+<!--&lt;!&ndash;								<td>{{i.address}}</td>&ndash;&gt;-->
+<!--&lt;!&ndash;								<td>{{i.phone_num}}</td>&ndash;&gt;-->
+<!--&lt;!&ndash;								<td><img src="{{i.photo.url}}" height="100px" width="100px"></td>&ndash;&gt;-->
+<!--&lt;!&ndash;								<td>{{i.email}}</td>&ndash;&gt;-->
+<!--&lt;!&ndash;								<td><img src="{{i.license.url}}" height="100px" width="100px"></td>&ndash;&gt;-->
+<!--&lt;!&ndash;								<td>{{i.location}}</td>&ndash;&gt;-->
+<!--&lt;!&ndash;								<td>{{i.username}}</td>&ndash;&gt;-->
+<!--&lt;!&ndash;								<td>{{i.action}}</td>&ndash;&gt;-->
+<!--&lt;!&ndash;								<td>&ndash;&gt;-->
+<!--&lt;!&ndash;								 <form method="POST" action="upbp">&ndash;&gt;-->
+<!--&lt;!&ndash;									{% csrf_token %}&ndash;&gt;-->
+<!--&lt;!&ndash;									 <input type="text" value="{{i.username}}" name="b1" hidden="">&ndash;&gt;-->
+<!--&lt;!&ndash;									 <input type="submit" value="UPDATE">&ndash;&gt;-->
+<!--&lt;!&ndash;								 </form>&ndash;&gt;-->
+<!--&lt;!&ndash;								</td>&ndash;&gt;-->
+<!--&lt;!&ndash;								<td><a href="change">Change Password</a></td>&ndash;&gt;-->
+<!--&lt;!&ndash;						</tr>&ndash;&gt;-->
+<!--&lt;!&ndash;							{% endfor %}&ndash;&gt;-->
+<!--&lt;!&ndash;						</thead>&ndash;&gt;-->
+<!--&lt;!&ndash;		</table>&ndash;&gt;-->
+<!--&lt;!&ndash;	</div>&ndash;&gt;-->
+
+<!--&lt;!&ndash;			<div class="clearfix"></div>&ndash;&gt;-->
+<!--&lt;!&ndash;		</div>&ndash;&gt;-->
+<!--&lt;!&ndash;	</div>&ndash;&gt;-->
+<!--&lt;!&ndash;</div>&ndash;&gt;-->
+<!--&lt;!&ndash;&lt;!&ndash; //tips &ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;&lt;!&ndash; footer &ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;	<div class="footer">&ndash;&gt;-->
+<!--&lt;!&ndash;		<div class="container">				 	&ndash;&gt;-->
+<!--&lt;!&ndash;			<div class="col-md-3 ftr_navi ftr">&ndash;&gt;-->
+<!--&lt;!&ndash;				<h3>Navigation</h3>&ndash;&gt;-->
+<!--&lt;!&ndash;				<ul>&ndash;&gt;-->
+<!--&lt;!&ndash;					<li><a href="index.html">Home</a></li>&ndash;&gt;-->
+<!--&lt;!&ndash;					<li><a href="about.html">About</a></li>&ndash;&gt;-->
+<!--&lt;!&ndash;					<li><a href="treatments.html">Treatments</a></li>&ndash;&gt;-->
+<!--&lt;!&ndash;					<li><a href="shortcodes.html">Short Codes</a></li>&ndash;&gt;-->
+<!--&lt;!&ndash;					<li><a href="contact.html">Contact</a></li>&ndash;&gt;-->
+<!--&lt;!&ndash;				</ul>&ndash;&gt;-->
+<!--&lt;!&ndash;			</div>&ndash;&gt;-->
+<!--&lt;!&ndash;			<div class="col-md-3 ftr_navi ftr">&ndash;&gt;-->
+<!--&lt;!&ndash;					 <h3>Specials</h3>&ndash;&gt;-->
+<!--&lt;!&ndash;					 <ul>&ndash;&gt;-->
+<!--&lt;!&ndash;						 <li><a href="#">Facials</a></li>&ndash;&gt;-->
+<!--&lt;!&ndash;						 <li><a href="#">Bridal Make-up</a></li>&ndash;&gt;-->
+<!--&lt;!&ndash;						 <li><a href="#">Hair Care</a></li>						&ndash;&gt;-->
+<!--&lt;!&ndash;						 <li><a href="#">Skin Care</a></li>&ndash;&gt;-->
+<!--&lt;!&ndash;						 <li><a href="#">Anti-aging</a></li>&ndash;&gt;-->
+<!--&lt;!&ndash;					 </ul>&ndash;&gt;-->
+<!--&lt;!&ndash;			</div>&ndash;&gt;-->
+<!--&lt;!&ndash;			<div class="col-md-3 ftr_navi ftr">&ndash;&gt;-->
+<!--&lt;!&ndash;				<h3>Get In Touch</h3>&ndash;&gt;-->
+<!--&lt;!&ndash;				<h2>SpaSol</h2>&ndash;&gt;-->
+<!--&lt;!&ndash;				<p>Diamond street,</p>&ndash;&gt;-->
+<!--&lt;!&ndash;				<p>260-14 City, Country</p>&ndash;&gt;-->
+<!--&lt;!&ndash;				<p>+62 000-0000-00</p>&ndash;&gt;-->
+<!--&lt;!&ndash;				<a href="mailto:info@example.com">info@example.com </a>&ndash;&gt;-->
+<!--&lt;!&ndash;			</div>&ndash;&gt;-->
+<!--&lt;!&ndash;			<div class="col-md-3 ftr_navi ftr">&ndash;&gt;-->
+<!--&lt;!&ndash;				<h3>Subscribe</h3>&ndash;&gt;-->
+<!--&lt;!&ndash;				<form>&ndash;&gt;-->
+<!--&lt;!&ndash;					<input type="text" value="Enter your email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Enter your email';}" required="">&ndash;&gt;-->
+<!--&lt;!&ndash;					<span class="glyphicon glyphicon-envelope" aria-hidden="true"><input type="submit" value=" "></span>&ndash;&gt;-->
+<!--&lt;!&ndash;				</form>&ndash;&gt;-->
+<!--&lt;!&ndash;			</div>&ndash;&gt;-->
+<!--&lt;!&ndash;			<div class="clearfix"> </div>&ndash;&gt;-->
+<!--&lt;!&ndash;		</div>&ndash;&gt;-->
+<!--&lt;!&ndash;	</div>&ndash;&gt;-->
+<!--&lt;!&ndash;&lt;!&ndash; //footer &ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;&lt;!&ndash; copy right &ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;<div class="copy-right">&ndash;&gt;-->
+<!--&lt;!&ndash;	<div class="container">&ndash;&gt;-->
+<!--&lt;!&ndash;		<p> &copy; 2016 SpaSol. All Rights Reserved | Design by  <a href="http://w3layouts.com/"> W3layouts</a></p>&ndash;&gt;-->
+<!--&lt;!&ndash;	</div>&ndash;&gt;-->
+<!--&lt;!&ndash;</div>&ndash;&gt;-->
+<!--&lt;!&ndash;&lt;!&ndash; //copy right &ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;&lt;!&ndash; for bootstrap working &ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;	<script src="{% static 'beautyparlour/js/bootstrap.js' %}"></script>&ndash;&gt;-->
+<!--&lt;!&ndash;&lt;!&ndash; //for bootstrap working &ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;&lt;!&ndash; smooth scrolling &ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;	<script type="text/javascript">&ndash;&gt;-->
+<!--&lt;!&ndash;		$(document).ready(function() {&ndash;&gt;-->
+<!--&lt;!&ndash;		/*&ndash;&gt;-->
+<!--&lt;!&ndash;			var defaults = {&ndash;&gt;-->
+<!--&lt;!&ndash;			containerID: 'toTop', // fading element id&ndash;&gt;-->
+<!--&lt;!&ndash;			containerHoverID: 'toTopHover', // fading element hover id&ndash;&gt;-->
+<!--&lt;!&ndash;			scrollSpeed: 1200,&ndash;&gt;-->
+<!--&lt;!&ndash;			easingType: 'linear' &ndash;&gt;-->
+<!--&lt;!&ndash;			};&ndash;&gt;-->
+<!--&lt;!&ndash;		*/								&ndash;&gt;-->
+<!--&lt;!&ndash;		$().UItoTop({ easingType: 'easeOutQuart' });&ndash;&gt;-->
+<!--&lt;!&ndash;		});&ndash;&gt;-->
+<!--&lt;!&ndash;	</script>&ndash;&gt;-->
+<!--&lt;!&ndash;	<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>&ndash;&gt;-->
+<!--&lt;!&ndash; //smooth scrolling &ndash;&gt;-->
+<!--</body>-->
+<!--</html>-->
+
+
+ <!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+	<title>Beauty Salon a Beauty Category Bootstrap Responsive website Template | Home :: w3layouts</title>
+	<!-- Meta Tags -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="keywords" content="Beauty Salon Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template,
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony Ericsson, Motorola web design" />
+	<script type="application/x-javascript">
+		addEventListener("load", function () {
+			setTimeout(hideURLbar, 0);
+		}, false);
+
+		function hideURLbar() {
+			window.scrollTo(0, 1);
+		}
+	</script>
+	<!-- //Meta Tags -->
+	<!-- Style Sheets -->
+	<link href="{% static 'css/bootstrap.css' %}" rel="stylesheet" type="text/css" media="all" />
+	<!--// Bootstrap-CSS -->
+	<link href="{% static 'css/font-awesome.css' %}" rel="stylesheet">
+	<!--// Font-Awesome-CSS -->
+	<link rel="stylesheet" href="css/owl.carousel.css" type="text/css" media="all" />
+	<link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" property="" />
+	<!--// Owl-Carousel-CSS -->
+	<link href="{% static 'css/style.css' %}" rel="stylesheet" type="text/css" media="all" />
+	<!-- //Style Sheets -->
+	<!-- web-fonts -->
+	<link href="//fonts.googleapis.com/css?family=Khula:300,400,600,700,800}" rel="stylesheet">
+	<link href="//fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,400,400i,500,500i,600,600i,700,700i,800'" rel="stylesheet">
+	<!--// web-fonts -->
+</head>
+
+<body>
+	<!-- banner -->
+	<div class="banner jarallax" id="home">
+		<img class="jarallax-img" src="{% static 'images/p3.jpg' %}" alt="">
+		<header>
+			<div class="container">
+				<div class="header-bottom-agileits">
+					<div class="w3-logo">
+						<h1><a href="orders"><span style="color:black">BEAU</span>TIFY</a></h1>
+
+					</div>
+					<div class="clearfix"></div>
+				</div>
+			</div>
+		</header>
+		<!-- navigation -->
+		<div class="nav-bg">
+			<div class="container">
+<!--					<nav class="navbar navbar-default shift">-->
+					<!-- Brand and toggle get grouped for better mobile display -->
+					<div class="navbar-header">
+<!--						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"-->
+<!--							aria-expanded="false">-->
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+
+					</div>
+
+					</head>
+				</head>
+<body>
+
+<!--background-->
+<br>
+<style>
+	.previous {
+  color: white;
+}
+</style>
+</style>
+<a href="orders" class="previous">Back</a>
+
+		<br><br><br><br>
+		<div class="myDivision">
+			<br>
+			<table border="2" align="center" class="table table-bordered">
+				<thead class="thead-light">
+				<tr>
+					<th><h4 style="color:white"><b>Name</b></h4></th>
+<!--					<th><h4 style="color:white"><b>Owner name</b></h4></th>-->
+					<th><h4 style="color:white"><b>Address</b></h4></th>
+					<th><h4 style="color:white"><b>Phone number/Email</b></h4></th>
+										<th><h4 style="color:white"><b>Username</b></h4></th>
+
+					<th><h4 style="color:white"><b>Photo</b></h4></th>
+<!--					<th><h4><b>Email</b></h4></th>-->
+					<th><h4 style="color:white"><b>License</b></h4></th>
+					<th><h4 style="color:white"><b>Location</b></h4></th>
+<!--					<th><h4 style="color:white"><b>Action</b></h4></th>-->
+					<th><h4 style="color:white"><b>Update</b></h4></th>
+					<th><h4 style="color:white"><b>Change Password</b></h4></th>
+				</tr>
+				<tr>
+					{% for i in r %}
+					<td><b style="color:white">{{i.name}}</b></td>
+<!--					<td><b style="color:white">{{i.owner_name}}</b></td>-->
+					<td><b style="color:white">{{i.address}}</b></td>
+					<td><b style="color:white">{{i.phonenumber}}<br>
+					     {{i.email}}</b></td>
+										<td><b style="color:white">{{i.username}}</b></td>
+
+<!--					<td><img src="{{i.photo.url}}" height="100px" width="100px"></td>-->
+<!--					<td><b>{{i.email}}</b></td>-->
+					<td><img src="{{i.photo.url}}" height="100px" width="100px"></td>
+							<td><img src="{{i.license.url}}" height="100px" width="100px"></td>
+
+<!--					<td><img src="{{i.license.url}}" height="100px" width="100px"></td>-->
+					<td><b style="color:white">{{i.location}}</b></td>
+<!--					<td><b style="color:white">{{i.action}}</b></td>-->
+					<td><b style="color:white">
+						<form method="POST" action="upma">
+							{% csrf_token %}
+							<input type="text" value="{{i.username}}" name="b1" hidden="">
+							<input type="submit" value="UPDATE" class="btn btn-primary">
+						</form>
+					</b></td>
+					<td><h4><b style="color:red"><a href="changemapswd">Change Password</a></b></h4></td>
+				</tr>
+				    {% endfor %}
+				</thead>
+			</table>
+		</div>
+<!--<a href="userhome" class="previous">&laquo; Back</a>-->
+<!--	<h1>Complaints</h1>-->
+<!--	<div class="w3ls-contact">-->
+<!--		&lt;!&ndash; form starts here &ndash;&gt;-->
+<!--		<form action="comp" method="post">-->
+<!--			{% csrf_token %}-->
+<!--			<div class="agile-field-txt">-->
+<!--				<input type="text" name="username" placeholder=" "   required="" hidden=""/>-->
+<!--			</div>-->
+<!--			<div class="agile-field-txt">-->
+<!--				<label>Name :</label>-->
+<!--				<input type="text" name="name" placeholder=" " required="" />-->
+<!--			</div>-->
+<!--			<div class="agile-field-txt">-->
+<!--				<label>-->
+<!--					E-mail:</label>-->
+<!--				<input type="email" name="email" placeholder=" " required="" />-->
+<!--			</div>-->
+<!--			<div class="agile-field-txt">-->
+<!--				<label>-->
+<!--					Phone Number:</label>-->
+<!--				<input type="text" name="phonenumber" placeholder=" " required="" pattern="[0-9]{10}"/>-->
+<!--			</div>-->
+<!--			<div class="agile-field-txt">-->
+<!--				<label>-->
+<!--					Complaint :</label>-->
+<!--				<textarea name="complaint" placeholder=" " required=""></textarea>-->
+<!--			</div>-->
+<!--			<div class="w3ls-contact  w3l-sub">-->
+<!--				<input type="submit" class="btn btn-defeault btn-send"  onclick="return confirm('Are you sure ??')">-->
+<!--			</div>-->
+<!--			</form>-->
+<!--			</div>-->
+<!--		</form>-->
+<!--		&lt;!&ndash; //form ends here &ndash;&gt;-->
+<!--	</div>-->
+
+
+				</nav>
+			</div>
+		</div>
+		<!-- //navigation -->
+		<div class="container">
+			<!-- header -->
+			<!-- //header -->
+			<div class="agileits_w3layouts_banner_info">
+				<section class="slider">
+					<div class="flexslider">
+
+</body>
+
+
+</html>
